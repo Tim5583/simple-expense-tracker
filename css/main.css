@@ -11,7 +11,7 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.contaner {
+.container {
   padding: 2rem;
   width: 100%;
   max-width: 1200px;
@@ -31,11 +31,88 @@ body {
   width: 100%;
 }
 
+.form input:not([type=button]) {
+  width: 100%;
+  padding: .7rem;
+}
+
 .date-amount {
   margin: 1rem auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+}
+
+.date-amount .input-feild-date {
+  margin-right: .5rem;
+}
+
+.date-amount .input-feild-amount {
+  margin-left: .5rem;
+}
+
+.input-feilds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-feilds label {
+  margin-right: .5rem;
+  font-weight: 600;
+}
+
+.table {
+  width: 100%;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+}
+
+.table thead {
+  background-color: #c4c4c4;
+}
+
+table tr td:nth-child(1) {
+  width: 60%;
+}
+
+table tr td:nth-child(2) {
+  width: 20%;
+}
+
+table tr td:nth-child(3) {
+  width: 13%;
+}
+
+table tr td:nth-child(4) {
+  width: 7%;
+}
+
+.btn {
+  padding: .5rem 2rem;
+  border: 1px solid rgba(230, 230, 230, 0.392);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #24ce24;
+}
+
+button {
+  padding: .2rem;
+  border: none;
+}
+
+button:hover {
+  background-color: red;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

@@ -21,26 +21,28 @@
             <h2 class="form-header">Add A New Item:</h2>
 
             <div class="inputs">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" placeholder="What are the expense make?" autocomplete="off"
-                    autofocus>
+                <div class="input-feild-name input-feilds">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="What are the expense make?" autocomplete="off"
+                        autofocus>
+                </div>
                 <div class="date-amount">
-                    <div>
+                    <div class="input-feild-date input-feilds">
                         <label for="date">Date:</label>
                         <input type="date" name="date" id="date">
                     </div>
-                    <div>
+                    <div class="input-feild-amount input-feilds">
                         <label for="amount">Amount:</label>
                         <input type="number" name="amount" id="amount" step="0.01">
                     </div>
                 </div>
-                <input type="button" value="Save" id="save">
+                <input type="button" value="Save" id="save" class="btn">
             </div>
         </div>
 
         <!-- table with data  -->
         <div>
-            <table>
+            <table class="table">
                 <thead>
                     <th>Name</th>
                     <th>Date</th>
